@@ -24,7 +24,7 @@ async def async_setup_entry(hass, entry, async_add_entities):
 class LigneDeDehors(BinarySensorEntity):
     _attr_device_class = BinarySensorDeviceClass.CONNECTIVITY
     _attr_should_poll = True
-    _attr_name = "Lia — accès de dehors"
+    _attr_name = "Lia Home"
     _attr_icon = "mdi:home-export-outline"
 
     def __init__(self, entry, version: str):

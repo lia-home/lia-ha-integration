@@ -17,6 +17,7 @@ from .coeur.cles import charger_ou_creer
 from .coeur.module import Module
 from .coeur.reglages import url_ha
 from .const import CONF_JETON, CONF_RELAIS, FICHIER_CLE
+from .maj import programmer
 
 PLATFORMS = [Platform.BINARY_SENSOR]
 
@@ -37,6 +38,8 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     # Une tâche de fond liée à l'entrée : HA l'arrête quand on retire ou recharge l'intégration.
     entry.async_create_background_task(hass, module.tourner(), "lia_relais : ligne vers le relais")
     await hass.config_entries.async_forward_entry_setups(entry, PLATFORMS)
+    # Chaque nuit, la version publiée s'installe seule (`maj.py`).
+    programmer(hass, entry)
     return True
 
 

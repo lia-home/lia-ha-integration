@@ -2,21 +2,21 @@
   "config": {
     "step": {
       "user": {
-        "title": "Lia — accès de dehors",
+        "title": "Lia Home",
         "description": "L'app Lia remplit ces champs seule. Pour un essai, entrez l'adresse du relais.",
         "data": {
           "relais": "Adresse du relais"
         }
       },
       "jeton": {
-        "title": "Lia — accès de dehors",
+        "title": "Lia Home",
         "description": "Empreinte de la clé de cette maison : {empreinte}. Entrez le jeton de la maison.",
         "data": {
           "jeton": "Jeton de la maison"
         }
       },
       "reconfigure": {
-        "title": "Lia — accès de dehors",
+        "title": "Lia Home",
         "description": "Changer de relais ou de jeton. La clé de la maison ne change pas.",
         "data": {
           "relais": "Adresse du relais",

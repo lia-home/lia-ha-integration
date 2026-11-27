@@ -2,21 +2,21 @@
   "config": {
     "step": {
       "user": {
-        "title": "Lia — remote access",
+        "title": "Lia Home",
         "description": "The Lia app fills in these fields by itself. For a test, enter the relay address.",
         "data": {
           "relais": "Relay address"
         }
       },
       "jeton": {
-        "title": "Lia — remote access",
+        "title": "Lia Home",
         "description": "Fingerprint of this home's key: {empreinte}. Enter the home token.",
         "data": {
           "jeton": "Home token"
         }
       },
       "reconfigure": {
-        "title": "Lia — remote access",
+        "title": "Lia Home",
         "description": "Change the relay or the token. The home key does not change.",
         "data": {
           "relais": "Relay address",

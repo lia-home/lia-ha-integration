@@ -1,7 +1,7 @@
 {
   "domain": "lia_relais",
-  "name": "Lia — accès de dehors",
-  "codeowners": ["@Aziz5706"],
+  "name": "Lia Home",
+  "codeowners": ["@lia-home"],
   "config_flow": true,
   "dependencies": ["http"],
   "documentation": "https://liahome.app",
@@ -10,5 +10,5 @@
   "issue_tracker": "https://liahome.app",
   "requirements": [],
   "single_config_entry": true,
-  "version": "0.3.0"
+  "version": "0.3.1"
 }
